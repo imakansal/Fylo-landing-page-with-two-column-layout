@@ -13,7 +13,12 @@
     --light-gray: hsl(0, 0%, 75%);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     color: var(--very-dark-blue);
 }
@@ -29,6 +34,7 @@ li {
 }
 
 header {
+    margin: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +43,7 @@ header {
 }
 
 body {
-    padding: 1.5em;
+    /* padding: 1.5em; */
 }
 
 .logo {
@@ -59,4 +65,304 @@ body {
 .headerNavLinks a {
     text-decoration: none;
     color: var(--very-dark-blue);
+}
+
+#illustration1, #illustration2 {
+    width: 100%;
+    padding: 2em;
+}
+
+.backgroundImage, .bgCurve {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+main h1 {
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+
+.getStartedFormContainer {
+    width: 100%;
+    padding: 0.5em 2.25em;
+    margin-bottom: 5em;
+}
+
+.getStartedForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+}
+
+.getStartedForm button {
+    display: inline-block;
+}
+
+.getStartedForm input {
+    border: none;
+    color: var(--very-dark-blue);
+    padding: 0 1.5em; 
+    font-size: 0.7rem;
+    line-height: 3.5em;
+    margin-bottom: 1.5em;
+    border: 1px solid var(--very-dark-blue);
+    border-radius: 3px;
+}
+
+.getStartedForm input::placeholder {
+    color: var(--light-gray)
+}
+
+.getStartedForm button {
+    margin-bottom: 0.5em;
+    background-color: var(--bright-blue);
+    border: none;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 700;
+    line-height: 3.1em;
+    border-radius: 3px;
+}
+
+.stayProductive {
+    padding: 2em;
+}
+
+.stayProductive h2 {
+    font-size: 1.05em;
+    margin-bottom: 1.5em;
+}
+
+.stayProductive p {
+    font-size: 0.9em;
+    color: var(--desaturated-blue);
+}
+
+.callToAction {
+    display: flex;
+    width: max-content;
+    margin: 3em auto 1.5em;
+    padding-bottom: 0.25em;
+    border-bottom: 2px solid var(--moderate-cyan);
+}
+
+.callToAction .arrowImage {
+    width: 1.25em;
+    height: auto;
+}
+
+.callToAction a {
+    font-size: 0.85em;
+    color: var(--moderate-cyan);
+    text-decoration: none;
+    margin-right: 0.5em;
+}
+
+.secondarySection {
+    background-color:var(--light-grayish-blue);
+    text-align: center;
+    padding-bottom: 3.5em;
+}
+
+.card {
+    font-size: 1rem;
+    width: 75%;
+    margin: 2.5em auto;
+    border-radius: 0.25em;
+    text-align: left;
+    padding: 1em 1em 1.3em 1.7em;
+    background-color: white;
+    box-shadow: 0 0 10px 2px hsla(238, 22%, 44%, 0.1);
+}
+
+.card p {
+    text-align: left;
+    margin-top: 0;
+    font-size: 0.65em;
+    line-height: 1.75em;
+}
+
+.cardProfile {
+    display: flex;
+}
+
+.profilePicContainer {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profilePic {
+    width: 100%;
+}
+
+.profileDetails {
+    margin-left: 0.5em;
+    height: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profileName {
+    margin: 0;
+    font-size: 0.6em;
+}
+
+.card .profileDesignation {
+    font-size: 0.4em; 
+    margin: 0;
+}
+
+.earlyAccess {
+    padding: 3.25em 2.25em;
+    text-align: center;
+    color: white;
+    background-color: var(--desaturated-blue);
+}
+
+.earlyAccess h2 {
+    font-size: 1.12em;
+    margin-top: 0;
+}
+
+.earlyAccess p {
+    font-size: 0.91em;
+    line-height: 1.6em;
+}
+
+.earlyAccessFormContainer {
+    width: 100%;
+    padding: 0.5em 2.25em;
+}
+
+.earlyAccessForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: auto;
+}
+
+
+.earlyAccessForm input {
+    border: none;
+    color: var(--very-dark-blue);
+    padding: 0 1.5em; 
+    font-size: 0.7rem;
+    line-height: 3em;
+    margin-bottom: 0.75em;
+    border: 1px solid var(--very-dark-blue);
+    border-radius: 3px;
+}
+
+.earlyAccessForm input::placeholder {
+    color: var(--light-gray)
+}
+
+.earlyAccessForm button {
+    margin-bottom: 0.5em;
+    background-color: var(--bright-blue);
+    border: none;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 3em;
+    border-radius: 3px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--very-dark-blue);
+    color: white;
+    padding: 2.5em;
+}
+
+.footerLogo {
+    width: 11.5em;
+    margin-bottom: 2em;
+}
+
+.footerNavLinks ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerNavLinks a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.footerNavLinks li {
+    margin: 0 0 1em 0;
+}
+
+.footerSection {
+    margin: 0 0 3em 0 ;
+}
+
+.contactLink {
+    display: flex;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.contactLink p {
+    margin: 0;
+}
+.icon {
+    width: 1.25em;
+    margin-right: 1em;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    width: 7em;
+}
+
+.socialLogoContainer {
+    width: 1.8em;
+    height: 1.8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.socialLogo {
+    width: 50%;
+}
+
+#illustration1 {
+    margin-top: 3em;
+}
+
+.heroContent {
+    padding: 0 1.5em 1.5em 1.5em;
+}
+
+.heroContent h1 {
+    margin: 1em 0 1.2em;
+    font-size: 1.75em;
+}
+
+.heroContent p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 0 1.25em;
 }
